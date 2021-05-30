@@ -20,7 +20,11 @@ app.get('/', (req, res) => {
 })
   
 app.post('/', (req, res) => {
-  // var h = req.body.userid
+  // var h = req.body.userid\
+
+  //check for form submission******************************
+
+  console.log(req.body);
   var rid = req.body.roomid
   res.redirect('/' + rid)
 })

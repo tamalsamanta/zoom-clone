@@ -5,19 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+  <script defer src="/socket.io/socket.io.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
-  <form action="#" method="post" onsubmit="myfunc()" enctype="multipart/form-data">
+  <form action="" method="POST">
     <input type="text" name="userid" id="userid">
     <input type="text" name="roomid" id="roomid">
     <input type="submit" value="connect">
   </form>
-
-  <script>
-    function myfunc() {
-      console.log(FormData)
-    }
-  </script>
+  <!-- <form action="#" method="POST">
+    <input type="number" name="height" id="h" placeholder="Height">
+    <input type="number" name="weight" id="w" placeholder="Weight">
+    <input type="submit" value="Calculate">
+  </form> -->
 </body>
 </html>
